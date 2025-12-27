@@ -308,23 +308,23 @@ export default function CinematicPortfolioPreview() {
 
           <div className="mt-6 space-y-6">
             <div>
-              <h3 className="font-semibold text-lg">Project Manager, Senior Software Engineer — QueueLeaf</h3>
+              <h3 className="font-semibold text-lg">Project Manager, Senior Software Engineer - QueueLeaf</h3>
               <p className="text-sm text-white/60">09/2025 – Present</p>
               <p className="mt-2 text-white/70">Led frontend development, integrated REST APIs, contributed to backend logic, and delivered real‑time queue analytics. Winner of the 2025 iShowcase Award.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg">IT / Project Manager — Uzbek Club (University of Arizona)</h3>
+              <h3 className="font-semibold text-lg">IT / Project Manager - Uzbek Club (University of Arizona)</h3>
               <p className="text-sm text-white/60">02/2024 – 12/2025</p>
               <p className="mt-2 text-white/70">Developed and maintained the club’s website, managed digital content, and supported community engagement through web technologies.</p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg">Intern — IT Park Uzbekistan</h3>
+              <h3 className="font-semibold text-lg">Intern - IT Park Uzbekistan</h3>
               <p className="text-sm text-white/60">06/2025 – 08/2025</p>
               <p className="mt-2 text-white/70">Worked with startup ecosystem teams, collaborated with professionals, and gained hands‑on exposure to venture investments and business processes.</p>
             </div>
             <div>
               <h3 className="font-semibold text-lg">
-                Mentee — Reddit Mentorship Program
+                Mentee - Reddit Mentorship Program
               </h3>
               <p className="text-sm text-white/60">01/2024 – 05/2024</p>
               <p className="mt-2 text-white/70">
