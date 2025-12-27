@@ -198,7 +198,7 @@ export default function CinematicPortfolioPreview() {
             <div className="pt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
                 { k: "Focus", v: "Project Management, Frontend + product UX" },
-                { k: "Stack", v: "Java, Python, Next.js, TS" },
+                { k: "Stack", v: "Java, Python, HTML, CSS" },
                 { k: "Style", v: "Cinematic motion + clarity" },
               ].map((x) => (
                 <div
