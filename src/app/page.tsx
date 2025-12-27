@@ -101,7 +101,7 @@ export default function CinematicPortfolioPreview() {
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
 
               <img
-                src="/me.jpg"
+                src="/me.png"
                 alt="Portrait"
                 className="h-[620px] w-full object-cover object-[50%_18%]"
               />
