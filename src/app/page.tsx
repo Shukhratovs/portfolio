@@ -101,9 +101,9 @@ export default function CinematicPortfolioPreview() {
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
 
               <img
-                src="/me2.png"
+                src="/me.jpg"
                 alt="Portrait"
-                className="h-[570px] w-full object-cover object-[50%_18%]"
+                className="h-[620px] w-full object-cover object-[50%_18%]"
               />
 
               {/* subtle edge vignette */}
@@ -198,7 +198,7 @@ export default function CinematicPortfolioPreview() {
             <div className="pt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
                 { k: "Focus", v: "Project Management, Frontend + product UX" },
-                { k: "Stack", v: "Next.js, TS, Tailwind" },
+                { k: "Stack", v: "Java, Python, Next.js, TS" },
                 { k: "Style", v: "Cinematic motion + clarity" },
               ].map((x) => (
                 <div
