@@ -12,7 +12,7 @@ const projects = [
   {
     title: "QueueLeaf",
     desc: "Queue management platform with real-time status updates, average wait times, and analytics. Winner of the 2025 iShowcase Award.",
-    tags: ["Next.js", "REST APIs", "Frontend", "Analytics"],
+    tags: ["Express.js", "Node.js", "REST APIs", "Prisma", "Frontend", "Analytics"],
     link: "https://queueleaf-frontend.vercel.app/",
   },
   {
