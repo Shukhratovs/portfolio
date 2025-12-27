@@ -123,7 +123,7 @@ export default function CinematicPortfolioPreview() {
                   Khumoyun <span className="text-white/75">Shukhratov</span>
                 </div>
                 <div className="mt-2 text-sm text-white/70">
-                  Software Engineer • Frontend • Product-minded builder
+                  Software Engineer • Project Manager • Frontend • Backend • Product-minded builder
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function CinematicPortfolioPreview() {
             </h1>
 
             <p className="max-w-2xl text-base md:text-lg text-white/70 leading-relaxed">
-              Software engineer with a strong focus on frontend development, algorithms, and object‑oriented programming. Experienced in building responsive web applications, integrating APIs, and delivering user‑focused digital products.
+              Software engineer and project manager with a strong focus on frontend development, algorithms, and object‑oriented programming. Experienced in building responsive web applications, integrating APIs, and delivering user‑focused digital products.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -197,7 +197,7 @@ export default function CinematicPortfolioPreview() {
 
             <div className="pt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                { k: "Focus", v: "Frontend + product UX" },
+                { k: "Focus", v: "Project Management, Frontend + product UX" },
                 { k: "Stack", v: "Next.js, TS, Tailwind" },
                 { k: "Style", v: "Cinematic motion + clarity" },
               ].map((x) => (
@@ -291,7 +291,7 @@ export default function CinematicPortfolioPreview() {
 
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
             <p className="text-white/70 leading-relaxed">
-              My background is centered on software development, algorithms, data structures, and object‑oriented design. I enjoy building clean, maintainable systems that balance performance with usability.
+              My background is centered on software development, project management, algorithms, data structures, and object‑oriented design. I enjoy building clean, maintainable systems that balance performance with usability.
             </p>
             <p className="text-white/70 leading-relaxed">
               I’ve led frontend development for real products, collaborated across teams, and worked with startups and mentorship programs that strengthened both my technical and professional skills.
@@ -308,7 +308,7 @@ export default function CinematicPortfolioPreview() {
 
           <div className="mt-6 space-y-6">
             <div>
-              <h3 className="font-semibold text-lg">Senior Software Engineer — QueueLeaf</h3>
+              <h3 className="font-semibold text-lg">Project Manager, Senior Software Engineer — QueueLeaf</h3>
               <p className="text-sm text-white/60">09/2025 – Present</p>
               <p className="mt-2 text-white/70">Led frontend development, integrated REST APIs, contributed to backend logic, and delivered real‑time queue analytics. Winner of the 2025 iShowcase Award.</p>
             </div>
