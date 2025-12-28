@@ -412,7 +412,7 @@ export default function CinematicPortfolioPreview() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
-              <h3 className="font-semibold">100 Days of Python Bootcamp</h3>
+              <h3 className="font-semibold">100 Days of Code™: The Complete Python Pro Bootcamp</h3>
               <p className="mt-1 text-sm text-white/60">Udemy</p>
             </div>
           </div>
