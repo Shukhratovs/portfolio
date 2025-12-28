@@ -307,7 +307,7 @@ export default function CinematicPortfolioPreview() {
 
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
             <p className="text-white/70 leading-relaxed">
-              My background is centered on software development, project management, algorithms,
+              My background is centered on project management, software development, algorithms,
               data structures, and object-oriented design. I enjoy building clean, maintainable
               systems that balance performance with usability.
             </p>
