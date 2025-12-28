@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Youtube } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18, filter: "blur(6px)" },
@@ -16,16 +16,16 @@ const projects = [
     link: "https://queueleaf-frontend.vercel.app/",
   },
   {
+    title: "DevPortfolio",
+    desc: "Collection of Python projects showcasing fundamentals, problem-solving, and consistent shipping across multiple mini-apps.",
+    tags: ["Python", "Projects", "Practice", "Problem Solving"],
+    link: "https://github.com/Shukhratovs/DevPortfolio",
+  },
+  {
     title: "Uzbek Club Website",
     desc: "Designed and developed a community website to showcase events, culture, and activities for the Uzbek Club at the University of Arizona.",
     tags: ["HTML", "CSS", "JavaScript", "Web Design"],
     link: "https://uzsa.online/",
-  },
-  {
-    title: "IT Park Uzbekistan Internship",
-    desc: "Worked with startup ecosystems and venture investment teams, gaining exposure to real business processes and tech-driven growth.",
-    tags: ["Startups", "IT Ecosystem", "Collaboration"],
-    link: "https://it-park.uz/en/itpark",
   },
 ];
 
@@ -76,15 +76,12 @@ export default function CinematicPortfolioPreview() {
           <span className="font-semibold text-white">KS</span> / PORTFOLIO
         </div>
         <nav className="flex items-center gap-6 text-sm text-white/70">
-          <a className="hover:text-white transition" href="#projects">
-            Projects
-          </a>
-          <a className="hover:text-white transition" href="#about">
-            About
-          </a>
-          <a className="hover:text-white transition" href="#contact">
-            Contact
-          </a>
+          <a className="hover:text-white transition" href="#projects">Projects</a>
+          <a className="hover:text-white transition" href="#about">About</a>
+          <a className="hover:text-white transition" href="#experience">Experience</a>
+          <a className="hover:text-white transition" href="#education">Education</a>
+          <a className="hover:text-white transition" href="#certificates">Certificates</a>
+          <a className="hover:text-white transition" href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -97,9 +94,7 @@ export default function CinematicPortfolioPreview() {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             className="md:col-span-4 lg:col-span-4"
           >
-
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
-
               <img
                 src="/me.png"
                 alt="Portrait"
@@ -147,7 +142,7 @@ export default function CinematicPortfolioPreview() {
             </h1>
 
             <p className="max-w-2xl text-base md:text-lg text-white/70 leading-relaxed">
-              Software engineer and project manager with a strong focus on frontend development, algorithms, and object‑oriented programming. Experienced in building responsive web applications, integrating APIs, and delivering user‑focused digital products.
+              Software engineer and project manager with a strong focus on frontend development, algorithms, and object-oriented programming. Experienced in building responsive web applications, integrating APIs, and delivering user-focused digital products.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -171,7 +166,8 @@ export default function CinematicPortfolioPreview() {
                 <a
                   className="hover:text-white transition"
                   href="https://github.com/Shukhratovs"
-                  onClick={(e) => e.preventDefault()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5" />
@@ -179,7 +175,8 @@ export default function CinematicPortfolioPreview() {
                 <a
                   className="hover:text-white transition"
                   href="https://www.linkedin.com/in/khumoyun-shukhratov-52925a26a/"
-                  onClick={(e) => e.preventDefault()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
@@ -187,10 +184,30 @@ export default function CinematicPortfolioPreview() {
                 <a
                   className="hover:text-white transition"
                   href="mailto:otabekovich0050@gmail.com"
-                  onClick={(e) => e.preventDefault()}
                   aria-label="Email"
                 >
                   <Mail className="h-5 w-5" />
+                </a>
+                <a
+                  className="hover:text-white transition"
+                  href="https://www.youtube.com/@HumoDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube Channel 1"
+                  title="YouTube Channel 1"
+                >
+                  <Youtube className="h-6 w-6" />
+                </a>
+
+                <a
+                  className="hover:text-white transition"
+                  href="https://www.youtube.com/@Shukhratovs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube Channel 2"
+                  title="YouTube Channel 2"
+                >
+                  <Youtube className="h-6 w-6" />
                 </a>
               </div>
             </div>
@@ -233,8 +250,7 @@ export default function CinematicPortfolioPreview() {
             <h2 className="mt-2 text-2xl md:text-3xl font-semibold">Projects</h2>
           </div>
           <p className="hidden md:block text-sm text-white/60 max-w-md">
-            A few highlights that show product thinking, UI quality, and shipping
-            ability.
+            A few highlights that show product thinking, UI quality, and shipping ability.
           </p>
         </motion.div>
 
@@ -291,10 +307,14 @@ export default function CinematicPortfolioPreview() {
 
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
             <p className="text-white/70 leading-relaxed">
-              My background is centered on software development, project management, algorithms, data structures, and object‑oriented design. I enjoy building clean, maintainable systems that balance performance with usability.
+              My background is centered on software development, project management, algorithms,
+              data structures, and object-oriented design. I enjoy building clean, maintainable
+              systems that balance performance with usability.
             </p>
             <p className="text-white/70 leading-relaxed">
-              I’ve led frontend development for real products, collaborated across teams, and worked with startups and mentorship programs that strengthened both my technical and professional skills.
+              I’ve led frontend development for real products, collaborated across teams, and worked
+              with startups and mentorship programs that strengthened both my technical and
+              professional skills.
             </p>
           </div>
         </div>
@@ -310,29 +330,90 @@ export default function CinematicPortfolioPreview() {
             <div>
               <h3 className="font-semibold text-lg">Project Manager, Senior Software Engineer – QueueLeaf</h3>
               <p className="text-sm text-white/60">09/2025 – Present</p>
-              <p className="mt-2 text-white/70">Led frontend development, integrated REST APIs, contributed to backend logic, and delivered real‑time queue analytics. Winner of the 2025 iShowcase Award.</p>
+              <p className="mt-2 text-white/70">
+                Led frontend development, integrated REST APIs, contributed to backend logic, and
+                delivered real-time queue analytics. Winner of the 2025 iShowcase Award.
+              </p>
             </div>
+
             <div>
               <h3 className="font-semibold text-lg">IT / Project Manager – Uzbek Club (University of Arizona)</h3>
               <p className="text-sm text-white/60">02/2024 – 12/2025</p>
-              <p className="mt-2 text-white/70">Developed and maintained the club’s website, managed digital content, and supported community engagement through web technologies.</p>
+              <p className="mt-2 text-white/70">
+                Developed and maintained the club’s website, managed digital content, and supported
+                community engagement through web technologies.
+              </p>
             </div>
+
             <div>
               <h3 className="font-semibold text-lg">Intern – IT Park Uzbekistan</h3>
               <p className="text-sm text-white/60">06/2025 – 08/2025</p>
-              <p className="mt-2 text-white/70">Worked with startup ecosystem teams, collaborated with professionals, and gained hands‑on exposure to venture investments and business processes.</p>
+              <p className="mt-2 text-white/70">
+                Worked with startup ecosystems and venture investment teams, gaining exposure to real
+                business processes and tech-driven growth.
+              </p>
             </div>
+
             <div>
-              <h3 className="font-semibold text-lg">
-                Mentee – Reddit Mentorship Program
-              </h3>
+              <h3 className="font-semibold text-lg">Mentee – Reddit Mentorship Program</h3>
               <p className="text-sm text-white/60">01/2024 – 05/2024</p>
               <p className="mt-2 text-white/70">
                 Selected to participate in the Reddit Mentorship Program, receiving one-on-one
-                guidance from industry professionals in software development and career
-                navigation. Strengthened technical foundations, goal-setting, and project
-                planning skills while building meaningful connections with mentors and peers.
+                guidance from industry professionals in software development and career navigation.
+                Strengthened technical foundations, goal-setting, and project planning while building
+                connections with mentors and peers.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section id="education" className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 md:p-10 backdrop-blur">
+          <p className="text-xs uppercase tracking-[0.22em] text-white/60">Education</p>
+          <h2 className="mt-2 text-2xl md:text-3xl font-semibold">Education</h2>
+
+          <div className="mt-6 space-y-5">
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <h3 className="font-semibold text-lg">University of Arizona</h3>
+                <p className="text-sm text-white/60">Graduated 12/2025</p>
+              </div>
+              <p className="mt-2 text-white/70">
+                B.S. – Computer and Information Science (CIS)
+              </p>
+              <p className="mt-1 text-white/60 text-sm">Minor: Business Administration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates */}
+      <section id="certificates" className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-7 md:p-10 backdrop-blur">
+          <p className="text-xs uppercase tracking-[0.22em] text-white/60">Certificates</p>
+          <h2 className="mt-2 text-2xl md:text-3xl font-semibold">Certificates & Awards</h2>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
+              <h3 className="font-semibold">2025 iShowcase Award (QueueLeaf)</h3>
+              <p className="mt-1 text-sm text-white/60">University of Arizona</p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
+              <h3 className="font-semibold">El-yurt Umidi Foundation – Scholarship Holder</h3>
+              <p className="mt-1 text-sm text-white/60">Uzbekistan</p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
+              <h3 className="font-semibold">Reddit Ads Boost Certificate</h3>
+              <p className="mt-1 text-sm text-white/60">Reddit</p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-6">
+              <h3 className="font-semibold">100 Days of Python Bootcamp</h3>
+              <p className="mt-1 text-sm text-white/60">Udemy</p>
             </div>
           </div>
         </div>
@@ -342,17 +423,14 @@ export default function CinematicPortfolioPreview() {
       <section id="contact" className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-7 md:p-10 backdrop-blur">
           <p className="text-xs uppercase tracking-[0.22em] text-white/60">Contact</p>
-          <h2 className="mt-2 text-2xl md:text-3xl font-semibold">
-            Let’s build something.
-          </h2>
+          <h2 className="mt-2 text-2xl md:text-3xl font-semibold">Let’s build something.</h2>
 
           <p className="mt-3 text-white/70 max-w-2xl">
-            Want to collaborate or have a role that fits frontend + product thinking?
-            Email me and I’ll respond quickly.
+            Want to collaborate or have a role that fits product thinking?
+            Email me or just reach out on LinkedIn. I’ll respond quickly.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            {/* Email */}
             <a
               href="mailto:otabekovich0050@gmail.com"
               className="inline-flex items-center gap-2 rounded-full bg-white text-black px-5 py-2.5 text-sm font-medium hover:bg-white/90 transition"
@@ -361,7 +439,6 @@ export default function CinematicPortfolioPreview() {
               Email Me
             </a>
 
-            {/* GitHub */}
             <a
               href="https://github.com/Shukhratovs"
               target="_blank"
@@ -372,7 +449,6 @@ export default function CinematicPortfolioPreview() {
               GitHub
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/khumoyun-shukhratov-52925a26a/"
               target="_blank"
@@ -383,7 +459,6 @@ export default function CinematicPortfolioPreview() {
               LinkedIn
             </a>
           </div>
-
         </div>
 
         <footer className="mt-10 text-center text-xs text-white/40">
