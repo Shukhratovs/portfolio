@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, Youtube } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Youtube, Menu, X } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18, filter: "blur(6px)" },
@@ -44,6 +44,7 @@ function NoiseOverlay() {
 }
 
 export default function CinematicPortfolioPreview() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-black text-white selection:bg-white/20">
       {/* Keyframes */}
@@ -71,18 +72,60 @@ export default function CinematicPortfolioPreview() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/55 to-black" />
       </div>
 
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <div className="text-sm tracking-wide text-white/80">
-          <span className="font-semibold text-white">KS</span> / PORTFOLIO
+      {/* Header */}
+      <header className="mx-auto max-w-6xl px-6 py-6">
+        <div className="flex items-center justify-between">
+          <div className="text-sm tracking-wide text-white/80">
+            <span className="font-semibold text-white">KS</span> / PORTFOLIO
+          </div>
+
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-6 text-sm text-white/70">
+            <a className="hover:text-white transition" href="#projects">Projects</a>
+            <a className="hover:text-white transition" href="#about">About</a>
+            <a className="hover:text-white transition" href="#experience">Experience</a>
+            <a className="hover:text-white transition" href="#education">Education</a>
+            <a className="hover:text-white transition" href="#certificates">Certificates</a>
+            <a className="hover:text-white transition" href="#contact">Contact</a>
+          </nav>
+
+          {/* Mobile burger */}
+          <button
+            type="button"
+            aria-label="Open menu"
+            className="md:hidden inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-white/80 hover:bg-white/10 transition"
+            onClick={() => setMobileMenuOpen((v) => !v)}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
-        <nav className="flex items-center gap-6 text-sm text-white/70">
-          <a className="hover:text-white transition" href="#projects">Projects</a>
-          <a className="hover:text-white transition" href="#about">About</a>
-          <a className="hover:text-white transition" href="#experience">Experience</a>
-          <a className="hover:text-white transition" href="#education">Education</a>
-          <a className="hover:text-white transition" href="#certificates">Certificates</a>
-          <a className="hover:text-white transition" href="#contact">Contact</a>
-        </nav>
+
+        {/* Mobile dropdown */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ${
+            mobileMenuOpen ? "max-h-[520px] mt-4" : "max-h-0"
+          }`}
+        >
+          <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-3">
+            {[
+              ["Projects", "#projects"],
+              ["About", "#about"],
+              ["Experience", "#experience"],
+              ["Education", "#education"],
+              ["Certificates", "#certificates"],
+              ["Contact", "#contact"],
+            ].map(([label, href]) => (
+              <a
+                key={href}
+                href={href}
+                className="block rounded-xl px-3 py-3 text-sm text-white/75 hover:text-white hover:bg-white/10 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
       </header>
 
       {/* Hero */}
