@@ -326,41 +326,79 @@ export default function CinematicPortfolioPreview() {
           <p className="text-xs uppercase tracking-[0.22em] text-white/60">Experience</p>
           <h2 className="mt-2 text-2xl md:text-3xl font-semibold">Professional Experience</h2>
 
-          <div className="mt-6 space-y-6">
-            <div>
-              <h3 className="font-semibold text-lg">Project Manager, Senior Software Engineer – QueueLeaf</h3>
-              <p className="text-sm text-white/60">09/2025 – Present</p>
-              <p className="mt-2 text-white/70">
+          {/* optional: short intro line */}
+          <p className="mt-2 max-w-2xl text-white/60">
+            A mix of leadership, engineering, campus roles, and mentorship experiences across
+            product-focused and academic environments.
+          </p>
+
+          <div className="mt-8 space-y-10">
+            {/* QueueLeaf */}
+            <div className="relative pl-6 border-l border-white/10">
+              <h3 className="font-medium text-lg">
+                Project Manager, Senior Software Engineer – QueueLeaf
+              </h3>
+              <p className="mt-1 text-xs uppercase tracking-wide text-white/50">
+                09/2025 – Present
+              </p>
+              <p className="mt-3 text-white/65 leading-relaxed">
                 Led frontend development, integrated REST APIs, contributed to backend logic, and
                 delivered real-time queue analytics. Winner of the 2025 iShowcase Award.
               </p>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-lg">IT / Project Manager – Uzbek Club (University of Arizona)</h3>
-              <p className="text-sm text-white/60">02/2024 – 12/2025</p>
-              <p className="mt-2 text-white/70">
+            {/* Uzbek Club */}
+            <div className="relative pl-6 border-l border-white/10">
+              <h3 className="font-medium text-lg">
+                IT / Project Manager – Uzbek Club (University of Arizona)
+              </h3>
+              <p className="mt-1 text-xs uppercase tracking-wide text-white/50">
+                02/2024 – 12/2025
+              </p>
+              <p className="mt-3 text-white/65 leading-relaxed">
                 Developed and maintained the club’s website, managed digital content, and supported
                 community engagement through web technologies.
               </p>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-lg">Intern – IT Park Uzbekistan</h3>
-              <p className="text-sm text-white/60">06/2025 – 08/2025</p>
-              <p className="mt-2 text-white/70">
+            {/* UA Law Library */}
+            <div className="relative pl-6 border-l border-white/10">
+              <h3 className="font-medium text-lg">
+                Student Worker – Daniel F. Cracchiolo Law Library (University of Arizona)
+              </h3>
+              <p className="mt-1 text-xs uppercase tracking-wide text-white/50">
+                05/2024 – 12/2025
+              </p>
+              <p className="mt-3 text-white/65 leading-relaxed">
+                Supported daily library operations by assisting students and faculty, managing digital
+                and physical resources, and maintaining organized workflows. Strengthened attention to
+                detail, responsibility, and customer-facing communication skills in an academic
+                environment.
+              </p>
+            </div>
+
+            {/* IT Park */}
+            <div className="relative pl-6 border-l border-white/10">
+              <h3 className="font-medium text-lg">Intern – IT Park Uzbekistan</h3>
+              <p className="mt-1 text-xs uppercase tracking-wide text-white/50">
+                06/2025 – 08/2025
+              </p>
+              <p className="mt-3 text-white/65 leading-relaxed">
                 Worked with startup ecosystems and venture investment teams, gaining exposure to real
                 business processes and tech-driven growth.
               </p>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-lg">Mentee – Reddit Mentorship Program</h3>
-              <p className="text-sm text-white/60">01/2024 – 05/2024</p>
-              <p className="mt-2 text-white/70">
-                Selected to participate in the Reddit Mentorship Program, receiving one-on-one
-                guidance from industry professionals in software development and career navigation.
-                Strengthened technical foundations, goal-setting, and project planning while building
+            {/* Reddit Mentorship */}
+            <div className="relative pl-6 border-l border-white/10">
+              <h3 className="font-medium text-lg">Mentee – Reddit Mentorship Program</h3>
+              <p className="mt-1 text-xs uppercase tracking-wide text-white/50">
+                01/2024 – 05/2024
+              </p>
+              <p className="mt-3 text-white/65 leading-relaxed">
+                Selected to participate in the Reddit Mentorship Program, receiving one-on-one guidance
+                from industry professionals in software development and career navigation. Strengthened
+                technical foundations, goal-setting, and project planning skills while building
                 connections with mentors and peers.
               </p>
             </div>
